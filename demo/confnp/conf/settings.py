@@ -72,8 +72,14 @@ WSGI_APPLICATION = 'wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'jconf.db'),
+    #    'ENGINE': 'django.db.backends.sqlite3',
+    #    'NAME': os.path.join(BASE_DIR, 'jconf.db'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': "jconf",
+        # additional MySQL configuration
+        'OPTIONS': {
+            'read_default_file': 'my.cnf',
+        }
     }
 }
 
