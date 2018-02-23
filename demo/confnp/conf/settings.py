@@ -80,7 +80,7 @@ DATABASES = {
         'PORT': 3306,
         # additional MySQL configuration
         'OPTIONS': {
-            'read_default_file': 'my.cnf',
+            'read_default_file': os.path.join(BASE_DIR, 'my.cnf'),
         }
     }
 }
