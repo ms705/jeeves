@@ -76,6 +76,8 @@ DATABASES = {
     #    'NAME': os.path.join(BASE_DIR, 'jconf.db'),
         'ENGINE': 'django.db.backends.mysql',
         'NAME': "jconf",
+        'HOST': "127.0.0.1",
+        'PORT': 3306,
         # additional MySQL configuration
         'OPTIONS': {
             'read_default_file': 'my.cnf',
