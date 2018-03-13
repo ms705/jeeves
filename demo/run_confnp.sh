@@ -8,7 +8,7 @@ source env/bin/activate
 pip install -r requirements.txt
 
 # initialize DB
-python demo/confnp/manage.py syncdb
+python demo/confnp/manage.py syncdb -v 3
 
 # run server
 python demo/confnp/manage.py runserver 0.0.0.0:8000
